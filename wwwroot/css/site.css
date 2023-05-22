@@ -1,0 +1,38 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    background-image: url(../img/miMenu.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+div .card_wrap {
+    width: 100%;    
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 150px;
+}
+
+div .card_inner {
+    width: 360px;    
+}
+
+footer {
+    background-color:white
+}

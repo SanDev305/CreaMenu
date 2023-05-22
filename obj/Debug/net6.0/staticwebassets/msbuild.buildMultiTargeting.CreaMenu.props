@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\CreaMenu.props" />
+</Project>

@@ -1,0 +1,46 @@
+﻿@model CreaMenu.Models.Inventario.InventarioViewModel
+
+@{
+    ViewData["Title"] = "Inventario";
+}
+<header>
+    <img src="~/img/ingre.png" style="width:250px"/>
+    <h1>Inventario</h1>
+</header>
+
+<select class="form-select mb-4" aria-label="Default select example" style="font-weight:bold;">
+    <option selected>Selecciona aquí...</option>
+    <option value="1">Carnes</option>
+    <option value="2">Granos</option>
+    <option value="3">Ensaladas</option>
+    <option value="4">Guarniciones</option>
+</select>
+
+<table class="table" style="background-color:white;">
+    <thead>
+        <tr>
+            <th class="text-center">Nombre</th>
+            <th class="text-center">Disponible</th>
+            <th class="text-center">Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var Inventario in Model.Carne)
+        {
+            <tr>
+                <td class="text-center">
+                    @Inventario.Nombre
+                </td>
+
+                <td class="text-center">
+                    <input type="checkbox">
+                </td>
+
+                <td class="text-center">
+                    <a class="btn btn-info" asp-action="" asp-route-id="">Editar</a>
+                    <a class="btn btn-secondary" asp-action="" asp-route-id="">Borrar</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
