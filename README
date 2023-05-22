@@ -1,1 +1,17 @@
+Este es un proyecto personal en desarrollo con fines de aprezaje.
 
+El proyecto consiste en la creación de almuerzos caceros de forma rapida con ingredientes con los que se cuentan.
+
+Tecnologias usadas:
+-C#
+-ASP.NET
+-EF Core
+-Html
+-Css
+-Bootstrap
+-Sql Server
+
+Cuenta con tres secciones:
+    -Ingredientes: Se mostrara cuatro listados diferentes separados por tipo de comida que lleva un almuerzo (Carnes, Granos, Ensaladas, Guarniciones).
+    -Menú Rapido: Cumple la funcion de crear el almuerzo del día seleccionando una opción al azar de cada listado de mi Inventario.
+    -Calendario: Esta opción cuenta con un calendario para organizar los almuerzos de los meses siguientes.
